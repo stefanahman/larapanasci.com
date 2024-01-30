@@ -4,6 +4,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 import Home from './section/Home';
 import About from './section/About';
+import PageNotFound from './section/PageNotFound';
 
 import Instructor from './section/Instructor';
 import InstructorDetails from './section/InstructorDetails';
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/blog"  element={<Blog />}/>
           <Route path="/blogdetails"  element={<BlogDetails />}/>
           <Route path="/contact"  element={<Contact />}/>
+          <Route path='*' element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>
