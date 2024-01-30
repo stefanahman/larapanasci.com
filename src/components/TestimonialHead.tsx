@@ -5,10 +5,10 @@ import stars from '../assets/stars.svg'
 const TestimonialsSection = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const showSlides = (index) => {
-    const slides = document.getElementsByClassName('mySlides');
-    const dots = document.getElementsByClassName('dot');
-    
+  const showSlides = (index: number) => {
+    const slides = document.querySelectorAll<HTMLElement>('.mySlides');
+    const dots = document.querySelectorAll<HTMLElement>('.dot');
+
     if (index >= slides.length) {
       setSlideIndex(0);
       return;
@@ -16,23 +16,23 @@ const TestimonialsSection = () => {
       setSlideIndex(slides.length - 1);
       return;
     }
-    
+
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     }
     for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(' active', '');
     }
-    
+
     slides[index].style.display = 'block';
     dots[index].className += ' active';
   };
 
-  const plusSlides = (n) => {
+  const plusSlides = (n: number) => {
     setSlideIndex((prevIndex) => prevIndex + n);
   };
 
-  const currentSlide = (index) => {
+  const currentSlide = (index: number) => {
     setSlideIndex(index - 1);
   };
 

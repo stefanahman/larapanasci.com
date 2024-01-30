@@ -3,29 +3,44 @@ import Girl from '../assets/girl-27.png'
 import Gril20 from '../assets/girl-20.png'
 import Gril21 from '../assets/girl21.png'
 import Gril22 from '../assets/girl23.png'
+import { Link } from 'react-router-dom';
 
-const BlogPost = ({ imageSrc, date, author, category, title, content }) => {
+interface BlogPostProps {
+  imageSrc: string;
+  date: string;
+  author: string;
+  category: string;
+  title: string;
+  content: string;
+}
+
+const BlogPost = ({ imageSrc, date, author, category, title, content }: BlogPostProps) => {
   return (
     <article className="bg-white p-2 rounded-3xl mb-8">
       <div>
-        <a href="blogdetails"><img className="rounded-tl-3xl rounded-tr-3xl" src={imageSrc} alt="img-6" /></a>
+        <Link to="blogdetails"><img className="rounded-tl-3xl rounded-tr-3xl" src={imageSrc} alt="img-6" /></Link>
         <p className="relative bottom-3 text-sm px-3 rounded-tr-full rounded-br-full text-white py-2 bg-art-1 inline">{date}</p>
       </div>
       <div className="p-5">
-        <a href="/blogdetails"><p className="text-art-1 pb-2">{author} &#8226; {category}</p></a>
-        <a href="/blogdetails"><h3 className="pb-3">{title}</h3></a>
+        <Link to="/blogdetails"><p className="text-art-1 pb-2">{author} &#8226; {category}</p></Link>
+        <Link to="/blogdetails"><h3 className="pb-3">{title}</h3></Link>
         <p className="text-p-2 pb-6">{content}</p>
-        <a href="/blogdetails" className="text-art-1 text-base font-medium font-inter hover:text-hlink">Read more</a>
+        <Link to="/blogdetails" className="text-art-1 text-base font-medium font-inter hover:text-hlink">Read more</Link>
       </div>
     </article>
   );
 };
 
-const RecentPost = ({ imageSrc, title }) => {
+interface RecentPostProps {
+  imageSrc: string;
+  title: string;
+}
+
+const RecentPost = ({ imageSrc, title }: RecentPostProps) => {
   return (
     <article className="mb-8">
-      <a href="/blogdetails"><img className="pb-3" src={imageSrc} alt="img-12" /></a>
-      <a href="/blogdetails"><h3 className="text-xl">{title}</h3></a>
+      <Link to="/blogdetails"><img className="pb-3" src={imageSrc} alt="img-12" /></Link>
+      <Link to="/blogdetails"><h3 className="text-xl">{title}</h3></Link>
     </article>
   );
 };
@@ -35,10 +50,10 @@ const PostCategory = () => {
     <div className="p-6 bg-white rounded-3xl">
       <h3 className="pb-6">Post Category</h3>
       <ul>
-        <li className="border-b py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<a href="#">Article</a></li>
-        <li className="border-b py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<a href="#">Blog</a></li>
-        <li className="border-b py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<a href="#">Health</a></li>
-        <li className="py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<a href="#">Uncategorized</a></li>
+        <li className="border-b py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<Link to="#">Article</Link></li>
+        <li className="border-b py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<Link to="#">Blog</Link></li>
+        <li className="border-b py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<Link to="#">Health</Link></li>
+        <li className="py-5 px-4 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right text-xs"></i>&#160;&#160;<Link to="#">Uncategorized</Link></li>
       </ul>
     </div>
   );
@@ -90,10 +105,10 @@ const BlogSection = () => {
       </div>
       <div className="container">
         <div className="lg:mt-14 mt-8 space-x-3">
-          <a href="#" className="text-sm font-normal font-inter text-art-1 p-3 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white">01</a>
-          <a href="#" className="text-sm font-normal font-inter text-art-1 p-3 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white">02</a>
-          <a href="#" className="text-sm font-normal font-inter text-art-1 p-3 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white">03</a>
-          <a href="#" className="text-sm font-normal font-inter text-art-1 px-3 py-2 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right"></i></a>
+          <Link to="#" className="text-sm font-normal font-inter text-art-1 p-3 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white">01</Link>
+          <Link to="#" className="text-sm font-normal font-inter text-art-1 p-3 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white">02</Link>
+          <Link to="#" className="text-sm font-normal font-inter text-art-1 p-3 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white">03</Link>
+          <Link to="#" className="text-sm font-normal font-inter text-art-1 px-3 py-2 bg-white rounded-full border border-art-1 hover:bg-art-1 hover:text-white"><i className="fa-solid fa-chevron-right"></i></Link>
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@ import circle from '../assets/circle.png'
 import Girl1 from '../assets/girl-12.png'
 import Girl2 from '../assets/girl13.png'
 import Girl3 from '../assets/girl-14.png'
+import { Link } from 'react-router-dom';
 
 const InstructorsSection = () => {
   return (
@@ -22,24 +23,24 @@ const InstructorsSection = () => {
           {/* Instructor 1 */}
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl1}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
@@ -48,24 +49,24 @@ const InstructorsSection = () => {
           </article>
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl2}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
@@ -74,55 +75,55 @@ const InstructorsSection = () => {
           </article>
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl3}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
               </p>
             </div>
           </article>
-         
+
 
         </div>
         <div className="text-left md:flex md:space-x-4 lg:space-x-20 lg:mb-20 md:mb-8">
           {/* Instructor 1 */}
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl1}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
@@ -131,24 +132,24 @@ const InstructorsSection = () => {
           </article>
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl2}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
@@ -157,55 +158,55 @@ const InstructorsSection = () => {
           </article>
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl3}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
               </p>
             </div>
           </article>
-         
+
 
         </div>
         <div className="text-left md:flex md:space-x-4 lg:space-x-20 lg:mb-20 md:mb-8">
           {/* Instructor 1 */}
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl1}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
@@ -214,24 +215,24 @@ const InstructorsSection = () => {
           </article>
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl2}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
@@ -240,31 +241,31 @@ const InstructorsSection = () => {
           </article>
           <article className="bg-white rounded-3xl md:mb-0 mb-8">
             <div className="mb-4">
-              <a href="/instructordetails">
+              <Link to="/instructordetails">
                 <img
                   className="rounded-tl-3xl rounded-tr-3xl"
                   src={Girl3}
                   alt="img-6"
                 />
-              </a>
+              </Link>
             </div>
             <div className="p-6">
-              <a
-                href="/instructordetails"
+              <Link
+                to="/instructordetails"
                 className="relative hover:bg-hlink bottom-3 text-sm px-3 rounded-md text-white py-2 bg-art-1 inline-block"
               >
                 @hannahwebb
-              </a>
-              <a href="/instructordetails">
+              </Link>
+              <Link to="/instructordetails">
                 <h3 className="pb-3">Julie Wagner</h3>
-              </a>
+              </Link>
               <p className="text-p-2">
                 Adipiscing nec arcu molestie massa cons-equat ullamcorper duis
                 lacinia.
               </p>
             </div>
           </article>
-         
+
 
         </div>
 

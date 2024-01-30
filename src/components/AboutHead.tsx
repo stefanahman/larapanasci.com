@@ -2,6 +2,7 @@ import React from 'react';
 import girlyoga from '../assets/girl-yoga.png'
 
 import floral1 from '../assets/floral-design1.svg'
+import { Link } from 'react-router-dom';
 
 
 const AboutHead = () => {
@@ -20,7 +21,7 @@ const AboutHead = () => {
             <li className="flex items-start"><img className="pt-1 pr-3" src={floral1} alt="icon-floral" />consectetur etiam dui. Pulvinar urna, vestibulum erat turpis.</li>
           </ul>
           <div className="lg:text-left text-center">
-            <a href="/course" className="primary-button inline-block">View All Classes</a>
+            <Link to="/course" className="primary-button inline-block">View All Classes</Link>
           </div>
         </div>
       </div>

@@ -2,24 +2,32 @@ import React from 'react';
 import Img1 from '../assets/c-1.png'
 import Img2 from '../assets/c-2.png'
 import Img3 from '../assets/c-4.png'
+import { Link } from 'react-router-dom';
 
-const CourseCard = ({ imgSrc, instructor, courseTitle, price }) => {
+interface Props {
+  imgSrc: string;
+  instructor: string;
+  courseTitle: string;
+  price: string;
+}
+
+const CourseCard = ({ imgSrc, instructor, courseTitle, price }: Props) => {
   return (
     <div className="lg:mb-0 mb-8">
       <div>
-        <a href="coursedetails.html">
+        <Link to="coursedetails.html">
           <img className="rounded-tl-3xl rounded-tr-3xl" src={imgSrc} alt="Course" />
-        </a>
+        </Link>
       </div>
       <div className="px-5 py-6 bg-white rounded-bl-3xl rounded-br-3xl">
-        <a href="coursedetails.html" className="text-sm text-art-1 pb-3">{instructor}</a>
+        <Link to="coursedetails.html" className="text-sm text-art-1 pb-3">{instructor}</Link>
         <div className="flex justify-between items-center">
-          <a href="coursedetails.html" className="w-75">
+          <Link to="coursedetails.html" className="w-75">
             <h3>{courseTitle}</h3>
-          </a>
-          <a href="coursedetails.html" className="w-1/4">
+          </Link>
+          <Link to="coursedetails.html" className="w-1/4">
             <p className="text-xl p-4 bg-art-1 hover:bg-hlink hover:duration-500 rounded-lg inline-block text-white">${price}</p>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

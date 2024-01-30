@@ -2,6 +2,7 @@ import React from 'react';
 import Img1 from '../assets/img-1.png'
 import Img2 from '../assets/img-2.png'
 import Img3 from '../assets/img-3.png'
+import { Link } from 'react-router-dom';
 
 
 const Popular = () => {
@@ -14,7 +15,7 @@ const Popular = () => {
             <p className="text-p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing nec arcu molestie massa consequat ullamcorper duis lacinia.</p>
           </div>
           <div className="md:w-2/5 md:text-right">
-            <a href="/course" className="primary-button inline-block">View All Classes</a>
+            <Link to="/course" className="primary-button inline-block">View All Classes</Link>
           </div>
         </div>
         <div className="lg:space-x-20 md:flex md:space-x-2 lg:text-left text-center">
@@ -26,7 +27,7 @@ const Popular = () => {
               <h4 className="pb-1 text-art-1">With Donna Hernandez</h4>
               <h3 className="pb-2">Popular Online Classes</h3>
               <p className="pb-8 text-p-2">Adipiscing nec arcu molestie massa cons-equat ullamcorper duis lacinia. </p>
-              <a href="/course"><i className="fa-solid fa-chevron-right px-[13px] py-[11px] rounded-full text-white hover:bg-art-1-hover bg-art-1-btn  hover:transition-all hover:duration-600"></i></a>
+              <Link to="/course"><i className="fa-solid fa-chevron-right px-[13px] py-[11px] rounded-full text-white hover:bg-art-1-hover bg-art-1-btn  hover:transition-all hover:duration-600"></i></Link>
             </div>
           </div>
           <div className="lg:mb-0 mb-8">
@@ -37,7 +38,7 @@ const Popular = () => {
               <h4 className="pb-1 text-art-1">With Donna Hernandez</h4>
               <h3 className="pb-2">Popular Online Classes</h3>
               <p className="pb-8 text-p-2">Adipiscing nec arcu molestie massa cons-equat ullamcorper duis lacinia. </p>
-              <a href="/course"><i className="fa-solid fa-chevron-right px-[13px] py-[11px] rounded-full text-white hover:bg-art-1-hover bg-art-1-btn  hover:transition-all hover:duration-600"></i></a>
+              <Link to="/course"><i className="fa-solid fa-chevron-right px-[13px] py-[11px] rounded-full text-white hover:bg-art-1-hover bg-art-1-btn  hover:transition-all hover:duration-600"></i></Link>
             </div>
           </div>
           <div className="lg:mb-0">
@@ -48,7 +49,7 @@ const Popular = () => {
               <h4 className="pb-1 text-art-1">With Donna Hernandez</h4>
               <h3 className="pb-2">Popular Online Classes</h3>
               <p className="pb-8 text-p-2">Adipiscing nec arcu molestie massa cons-equat ullamcorper duis lacinia. </p>
-              <a href="/course"><i className="fa-solid fa-chevron-right px-[13px] py-[11px] rounded-full text-white hover:bg-art-1-hover bg-art-1-btn  hover:transition-all hover:duration-600"></i></a>
+              <Link to="/course"><i className="fa-solid fa-chevron-right px-[13px] py-[11px] rounded-full text-white hover:bg-art-1-hover bg-art-1-btn  hover:transition-all hover:duration-600"></i></Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import React from 'react'
+
 import hcircle from '../assets/h-circle-4.svg'
+
 import Header from '../components/Header'
 import TestimonialsSection from '../components/TestimonialHead'
 import SubscribeSection from '../components/Sunscribe'
@@ -13,7 +15,7 @@ const About = () => {
   return (
     <div className='bg-body bg-no-repeat bg-right-top bg-20' style={{backgroundImage:`url{${hcircle}}`}}>
       <Header />
-      <CommonBanner title="About Us" navtitle="About-us"/>
+      <CommonBanner title="About Us" navtitle="About Us"/>
       <Become />
       <AboutNumb />
       <ReasonsToJoinSection />

@@ -37,7 +37,7 @@ const ContactSection = () => {
             />
             <textarea
               style={{ backgroundImage:   `url(${write})` }}
-              rows="5"
+              rows={5}
               placeholder="Message"
               className="md:bg-[4%_16%] md:pl-14 bg-no-repeat bg-[5%_18%] w-full border rounded-3xl  py-4 mb-6 pl-12 pr-4 focus:outline-art-1"
             ></textarea>

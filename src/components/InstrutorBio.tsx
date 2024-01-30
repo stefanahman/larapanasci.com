@@ -2,6 +2,7 @@ import React from 'react';
 import Feature from '../assets/features-34.svg'
 import circle from '../assets/circle.png'
 import Girl from '../assets/girl.png'
+import { Link } from 'react-router-dom';
 
 const InstructorSection = () => {
   return (
@@ -22,15 +23,15 @@ const InstructorSection = () => {
             <h2 className="text-art-1">Jane Smith</h2>
             <p>Senior Instructor</p>
             <div className="space-x-2 pt-4 pb-10">
-              <a href="https://www.facebook.com">
+              <Link to="https://www.facebook.com">
                 <i className="fa-brands fa-facebook-f px-4 py-3 border rounded-full border-art-1 text-art-1 hover:bg-art-1 hover:text-white hover:transition-all hover:duration-700"></i>
-              </a>
-              <a href="https://in.linkedin.com">
+              </Link>
+              <Link to="https://in.linkedin.com">
                 <i className="fa-brands fa-linkedin-in px-3 py-3 border rounded-full border-art-1 text-art-1 hover:bg-art-1 hover:text-white hover:transition-all hover:duration-700"></i>
-              </a>
-              <a href="https://www.youtube.com/">
+              </Link>
+              <Link to="https://www.youtube.com/">
                 <i className="fa-brands fa-youtube px-3 py-3 border rounded-full border-art-1 text-art-1 hover:bg-art-1 hover:text-white hover:transition-all hover:duration-700"></i>
-              </a>
+              </Link>
             </div>
             <img
               className="mx-auto mb-6 lg:mb-10"
