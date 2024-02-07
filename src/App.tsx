@@ -2,34 +2,28 @@ import React from 'react'
 
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 
-import Home from './section/Home';
-import About from './section/About';
-import PageNotFound from './section/PageNotFound';
-
-import Instructor from './section/Instructor';
-import InstructorDetails from './section/InstructorDetails';
-import Courses from './section/Course';
-import CoursesDetails from './section/CourseDetails';
-import Blog from './section/Blog';
-import BlogDetails from './section/BlogDetails';
-import Contact from './section/Contact';
-
+import {HomePage} from './pages/home';
+import {AboutPage} from './pages/about';
+import {ContactPage} from './pages/contact';
+import {NotFoundPage} from './pages/not-found';
+import ScrollToTop from './components/ScrollToTop';
+import { WorkshopsPage } from './pages/workshops';
+import { HandpanPage } from './pages/handpan';
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
-          <Route path="/"  element={<Home />}/>
-          <Route path="/about"  element={<About />}/>
-          <Route path="/instructor"  element={<Instructor />}/>
-          <Route path="/instructordetails"  element={<InstructorDetails />}/>
-          <Route path="/course"  element={<Courses />}/>
-          <Route path="/coursedetails"  element={<CoursesDetails />}/>
-          <Route path="/blog"  element={<Blog />}/>
-          <Route path="/blogdetails"  element={<BlogDetails />}/>
-          <Route path="/contact"  element={<Contact />}/>
-          <Route path='*' element={<PageNotFound />} />
+          <Route path="/"  element={<HomePage />}/>
+
+          <Route path="/about"  element={<AboutPage />}/>
+          <Route path="/contact"  element={<ContactPage />}/>
+          <Route path="/handpan"  element={<HandpanPage />}/>
+          <Route path="/workshops"  element={<WorkshopsPage />}/>
+
+          <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </>

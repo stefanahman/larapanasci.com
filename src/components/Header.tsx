@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import logo from '../assets/header.svg';
+import logo from '@/assets/logo.jpeg';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
-  const [isMenuVisible, setIsMenuVisible] = useState(true);
+export const Header = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuVisible(prevState => !prevState);
@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex justify-between items-center lg:py-7 py-3 lg:px-2 px-3 md:px-5 relative font-inter header-1">
           {/* logo */}
           <div className="lg:w-1/5 md:w-1/4 w-1/2">
-            <Link to="/"><img src={logo} alt="header-logo" /></Link>
+            <Link to="/"><img width={130} src={logo} alt="header-logo" /></Link>
           </div>
 
           {/* hamburger */}
@@ -35,27 +35,23 @@ const Header = () => {
                 <Link to="/about" className="px-3 md:pl-5" >About</Link>
               </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
-                <Link to="/instructor" className="px-3 md:pl-5" >Services</Link>
+                <Link to="/workshops" className="px-3 md:pl-5" >Workshops</Link>
               </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
-                <Link to="/blog" className="px-3 md:pl-5" >Blog</Link>
+                <Link to="/handpan" className="px-3 md:pl-5" >Handpan</Link>
               </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/contact" className="px-3 md:pl-5" >Contact</Link>
               </li>
-              <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0 md:hidden">
-                <Link to="Contact.html" className="px-3 md:pl-5" >Book Cunsultation</Link>
-              </li>
             </ul>
           </div>
 
-          <div className="hidden lg:w-1/5 lg:text-right md:w-30 md:block space-x-4">
-            <Link to="/contact" className="primary-button">Schedule A Workout</Link>
+          <div className="hidden lg:text-right md:block space-x-4">
+            <Link to="/workshops" className="primary-button">Workshops</Link>
+            <Link to="/handpan" className="primary-button">Handpan</Link>
           </div>
         </div>
       </div>
     </header>
   );
 }
-
-export default Header;
