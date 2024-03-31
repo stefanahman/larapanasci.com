@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '@/assets/logo.jpeg';
+import logo from '@/assets/logo.png';
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
@@ -18,6 +18,12 @@ export const Header = () => {
             <Link to="/"><img width={130} src={logo} alt="header-logo" /></Link>
           </div>
 
+          <div>
+            <h3>Lara Panasci - Workshops & Sound</h3>
+          </div>
+
+          <div style={{flexGrow: 1}}></div>
+
           {/* hamburger */}
           <div className="lg:hidden md:w-45 text-right md:pr-10 py-2 w-1/2">
             <button className="bar" onClick={toggleMenu}>
@@ -31,18 +37,18 @@ export const Header = () => {
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/" className="px-3 md:pl-5" >Home</Link>
               </li>
-              <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
+              {/* <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/about" className="px-3 md:pl-5" >About</Link>
-              </li>
+              </li> */}
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/workshops" className="px-3 md:pl-5" >Workshops</Link>
               </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/handpan" className="px-3 md:pl-5" >Handpan</Link>
               </li>
-              <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
+              {/* <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/contact" className="px-3 md:pl-5" >Contact</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

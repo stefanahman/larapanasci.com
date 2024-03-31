@@ -7,11 +7,11 @@ import { AboutBecome } from '@/pages/about';
 
 export const Page = () => {
   return (
-    <section style={{ backgroundColor: '#f7f4e1', backgroundImage: `url(${hcricle})` }}
+    <section style={{ backgroundImage: `url(${hcricle})` }}
       className="bg-body bg-no-repeat bg-right-top bg-25">
       <Header />
       <Banner />
-      <AboutBecome />
+      {/* <AboutBecome /> */}
       <Footer />
     </section>
   )

@@ -9,7 +9,7 @@ export const Page = () => {
 
   return (
     <section
-      style={{ backgroundColor: '#f7f4e1', backgroundImage: `url(${hcricle})` }}
+      style={{  backgroundImage: `url(${hcricle})` }}
       className="bg-body bg-no-repeat bg-right-top bg-25">
       <Header />
       <Banner />

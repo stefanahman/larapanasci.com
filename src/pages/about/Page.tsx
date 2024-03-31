@@ -12,7 +12,7 @@ import {Head} from './components/Head.js'
 export const Page = () => {
   return (
     <section
-      style={{backgroundColor: '#f7f4e1',backgroundImage:`url{${hcircle}}`}}
+      style={{backgroundImage:`url{${hcircle}}`}}
       className='bg-body bg-no-repeat bg-right-top bg-20'>
       <Header />
       <Navigation title="About" navtitle="About"/>

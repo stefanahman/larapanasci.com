@@ -899,6 +899,10 @@ p{
   min-height: 50vh;
 }
 
+.h-\[40vh\] {
+  height: 40vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1803,6 +1807,10 @@ p{
     display: none;
   }
 
+  .md\:h-\[60vh\] {
+    height: 60vh;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2072,8 +2080,16 @@ p{
     display: none;
   }
 
+  .lg\:h-\[60vh\] {
+    height: 60vh;
+  }
+
   .lg\:h-\[80vh\] {
     height: 80vh;
+  }
+
+  .lg\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .lg\:w-1\/2 {
@@ -2260,6 +2276,10 @@ p{
 
   .lg\:bg-contain {
     background-size: contain;
+  }
+
+  .lg\:bg-cover {
+    background-size: cover;
   }
 
   .lg\:bg-center {
