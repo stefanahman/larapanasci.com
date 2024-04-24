@@ -17,9 +17,9 @@ export const Page = () => {
       <Header />
       <Navigation title="About" navtitle="About"/>
       <Become />
-      <Head />
+      {/* <Head />
       <ReasonsToJoin />
-      <TestimonialsSection />
+      <TestimonialsSection /> */}
       <Footer />
     </section>
   )

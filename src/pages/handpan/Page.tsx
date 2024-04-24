@@ -6,6 +6,7 @@ import {Header, Footer, Navigation} from '@/components'
 import { Private } from './components/Private'
 import { MeditationLession } from './components/MeditationLession'
 import { YogaLession } from './components/YogaLession'
+import { Intro } from './components/Intro'
 
 export const Page = () => {
   return (
@@ -14,6 +15,7 @@ export const Page = () => {
       className="bg-body bg-no-repeat bg-right-top bg-25" >
       <Header />
       <Navigation title="Handpan" navtitle="Handpan"/>
+      <Intro />
       <Private />
       <MeditationLession />
       <YogaLession />

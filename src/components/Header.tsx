@@ -37,9 +37,9 @@ export const Header = () => {
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/" className="px-3 md:pl-5" >Home</Link>
               </li>
-              {/* <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
+              <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/about" className="px-3 md:pl-5" >About</Link>
-              </li> */}
+              </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/workshops" className="px-3 md:pl-5" >Workshops</Link>
               </li>
