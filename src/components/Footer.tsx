@@ -22,7 +22,7 @@ export const Footer = () => {
         </div>
         <div className="text-center space-x-4">
           <Link to="https://www.instagram.com/lara.panasci"><i className="fa-brands px-3 py-3 border rounded-full border-hlink text-hlink hover:bg-hlink hover:text-white hover:transition-all hover:duration-700"><FaInstagram /></i></Link>
-          <Link to="mailto:"><i className="fa-brands px-3 py-3 border rounded-full border-hlink text-hlink hover:bg-hlink hover:text-white hover:transition-all hover:duration-700"><FaRegEnvelope /></i></Link>
+          <Link to="mailto:info@larapanasci.com"><i className="fa-brands px-3 py-3 border rounded-full border-hlink text-hlink hover:bg-hlink hover:text-white hover:transition-all hover:duration-700"><FaRegEnvelope /></i></Link>
         </div>
       </div>
     </footer>
