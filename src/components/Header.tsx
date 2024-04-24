@@ -33,7 +33,7 @@ export const Header = () => {
 
           {/* navbar */}
           <div className={`lg:w-3/5 lg:justify-evenly lg:items-center ${isMenuVisible ? 'block' : 'hidden'}`}>
-            <ul id="menus" className="bg-white lg:bg-none absolute lg:relative lg:top-0 top-4 left-0 lg:bg-transparent bg-btn lg:flex lg:justify-center w-full mt-16 lg:mt-0 lg:space-x-4">
+            <ul id="menus" className="bg-white lg:bg-none absolute lg:relative lg:top-0 top-2 left-0 lg:bg-transparent bg-btn lg:flex lg:justify-center w-full mt-32 lg:mt-0 lg:space-x-4">
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/" className="px-3 md:pl-5" >Home</Link>
               </li>
