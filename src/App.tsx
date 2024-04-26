@@ -7,8 +7,9 @@ import {AboutPage} from './pages/about';
 import {ContactPage} from './pages/contact';
 import {NotFoundPage} from './pages/not-found';
 import ScrollToTop from './components/ScrollToTop';
-import { WorkshopsPage } from './pages/workshops';
+import { CreativeSpacePage } from './pages/creative-space';
 import { HandpanPage } from './pages/handpan';
+import { EventsPage } from './pages/events';
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
           <Route path="/about"  element={<AboutPage />}/>
           <Route path="/contact"  element={<ContactPage />}/>
           <Route path="/handpan"  element={<HandpanPage />}/>
-          <Route path="/workshops"  element={<WorkshopsPage />}/>
+          <Route path="/creative-space"  element={<CreativeSpacePage />}/>
+          <Route path="/events"  element={<EventsPage />}/>
 
           <Route path='*' element={<NotFoundPage />} />
         </Routes>

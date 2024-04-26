@@ -19,7 +19,7 @@ export const Header = () => {
           </div>
 
           <div>
-            <h3>Lara Panasci - Workshops & Sound</h3>
+            <h3>Lara Panasci - Handpan & Creative Space</h3>
           </div>
 
           <div style={{flexGrow: 1}}></div>
@@ -38,13 +38,16 @@ export const Header = () => {
                 <Link to="/" className="px-3 md:pl-5" >Home</Link>
               </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
-                <Link to="/about" className="px-3 md:pl-5" >About</Link>
+                <Link to="/about" className="px-3 md:pl-5" >About Me</Link>
               </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
-                <Link to="/workshops" className="px-3 md:pl-5" >Workshops</Link>
+                <Link to="/creative-space" className="px-3 md:pl-5" >Creative Space</Link>
               </li>
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/handpan" className="px-3 md:pl-5" >Handpan</Link>
+              </li>
+              <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
+                <Link to="/events" className="px-3 md:pl-5" >Events</Link>
               </li>
               {/* <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/contact" className="px-3 md:pl-5" >Contact</Link>
@@ -53,8 +56,9 @@ export const Header = () => {
           </div>
 
           <div className="hidden lg:text-right md:block space-x-4">
-            <Link to="/workshops" className="primary-button">Workshops</Link>
+            <Link to="/creative-space" className="primary-button">Creative Space</Link>
             <Link to="/handpan" className="primary-button">Handpan</Link>
+            <Link to="/events" className="primary-button">Events</Link>
           </div>
         </div>
       </div>

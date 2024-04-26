@@ -12,7 +12,7 @@ export const Page = () => {
       style={{ backgroundImage: `url(${hcricle})` }}
       className="bg-body bg-no-repeat bg-right-top bg-25">
       <Header />
-      <Navigation title="Workshops" navtitle="Workshops"/>
+      <Navigation title="Creative Space" navtitle="Creative Space"/>
       <Macrame />
       <MalaBeads />
       <Footer />

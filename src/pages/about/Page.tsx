@@ -15,7 +15,7 @@ export const Page = () => {
       style={{backgroundImage:`url{${hcircle}}`}}
       className='bg-body bg-no-repeat bg-right-top bg-20'>
       <Header />
-      <Navigation title="About" navtitle="About"/>
+      <Navigation title="About Me" navtitle="About Me"/>
       <Become />
       {/* <Head />
       <ReasonsToJoin />

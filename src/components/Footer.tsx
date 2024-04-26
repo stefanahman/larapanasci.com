@@ -14,10 +14,10 @@ export const Footer = () => {
         <div className="mb-10 lg:mb-0 lg:w-1/2">
           <ul className="lg:flex lg:justify-evenly lg:items-center text-center lg:space-y-0 space-y-4">
             <li><Link className="text-link hover:text-hlink" to="/">Home</Link></li>
-            <li><Link className="text-link hover:text-hlink" to="/about">About </Link></li>
-            <li><Link className="text-link hover:text-hlink" to="/workshops">Workshops</Link></li>
+            <li><Link className="text-link hover:text-hlink" to="/about">About Me</Link></li>
+            <li><Link className="text-link hover:text-hlink" to="/creative-space">Creative Space</Link></li>
             <li><Link className="text-link hover:text-hlink" to="/handpan">Handpan</Link></li>
-            {/* <li><Link className="text-link hover:text-hlink" to="/contact"> Contact </Link></li> */}
+            <li><Link className="text-link hover:text-hlink" to="/events">Events</Link></li>
           </ul>
         </div>
         <div className="text-center space-x-4">
