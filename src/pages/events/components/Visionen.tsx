@@ -17,9 +17,6 @@ export const Visionen = () => {
               Wein Degustation, Töpfern & Sound
             </li>
             <li className="flex items-start"><img className="pt-1 pr-3" src={floral1} alt="icon-floral" />
-              Friday’s Creative Space - 1 Mal im Monat
-            </li>
-            <li className="flex items-start"><img className="pt-1 pr-3" src={floral1} alt="icon-floral" />
               Creative Retreat - Ticino
             </li>
           </ul>

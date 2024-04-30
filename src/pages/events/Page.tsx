@@ -4,6 +4,7 @@ import hcircle from '@/assets/h-circle-4.svg'
 
 import {Header, Footer, Navigation} from '@/components'
 
+import {Aktuelles} from './components/Aktuelles.js'
 import {Visionen} from './components/Visionen.js'
 
 export const Page = () => {
@@ -13,6 +14,7 @@ export const Page = () => {
       className='bg-body bg-no-repeat bg-right-top bg-20'>
       <Header />
       <Navigation title="Events" navtitle="Events"/>
+      <Aktuelles />
       <Visionen />
       <Footer />
     </section>
