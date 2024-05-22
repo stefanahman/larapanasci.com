@@ -5,6 +5,7 @@ import round from '@/assets/round-2.png'
 
 import event1 from '@/assets/event-1.jpg'
 import event2 from '@/assets/event-2.jpg'
+import event5 from '@/assets/event-5.jpg'
 
 export const Visionen = () => {
   return (
@@ -13,6 +14,15 @@ export const Visionen = () => {
         <div className="text-center lg:w-1/2 lg:text-left lg:pr-20 pb-10 lg:pb-0">
           <h2 className="lg:pb-12 pb-12">Entstehende Visionen</h2>
           <ul className="space-y-4 lg:pb-0 pb-0">
+            <li className="flex items-start"><img className="pt-1 pr-3" src={floral1} alt="icon-floral" />
+              Outdoor “Workshop-Day” in Tipi-Zelt <br/>
+            </li>
+            <li className="flex items-start">
+              <img className="mx-auto" src={event5} alt="event" />
+            </li>
+            <li className="flex items-start"><img className="pt-1 pr-3" src={floral1} alt="icon-floral" />
+              Outdoor Makramé & Handpan
+            </li>
             <li className="flex items-start"><img className="pt-1 pr-3" src={floral1} alt="icon-floral" />
               Wein Degustation, Töpfern & Sound
             </li>
