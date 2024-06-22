@@ -14,12 +14,15 @@ export const Aktuelles = () => {
       <div className="container lg:flex">
         <div className="text-center lg:w-1 lg:text-left pb-10 lg:pb-0">
           <h2 className="text-center lg:pb-12 pb-12">Aktuelles</h2>
-          <img className="mx-auto md:w-1/2 mb-8" src={event6} alt="event" />
-          <img className="mx-auto md:w-1/2 mb-8" src={event7} alt="event" />
-          <h3 className="mx-auto md:w-1/2 lg:pb-4 pb-4 text-p-2 text-center">
-            - Ausverkauft -
-          </h3>
-          <div className="mx-auto md:w-1/2" style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+          <p className="text-p-2 text-center pb-10 lg:w-1/2 mx-auto">
+            Halten Sie Ausschau nach neuen bevorstehenden Veranstaltungen.
+          </p>
+          <h2 className="text-center lg:pb-12 pb-12 text-p-2">Frühere</h2>
+          <div className="mx-auto pb-3 md:w-1/2" style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+            <img className="lg:w-1/2" src={event6} alt="event" />
+            <img className="lg:w-1/2" src={event7} alt="event" />
+          </div>
+          <div className="mx-auto pb-3 md:w-1/2" style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
             <img className="lg:w-1/2" src={event4} alt="event" />
             <img className="lg:w-1/2" src={event3} alt="event" />
           </div>
