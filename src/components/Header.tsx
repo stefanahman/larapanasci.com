@@ -49,6 +49,9 @@ export const Header = () => {
               <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/events" className="px-3 md:pl-5" >Events</Link>
               </li>
+              <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
+                <Link to="/retreats" className="px-3 md:pl-5" >Retreats</Link>
+              </li>
               {/* <li className="text-sm text-link font-normal hover:text-hlink hover:bg-link lg:hover:bg-transparent py-3 lg:py-0">
                 <Link to="/contact" className="px-3 md:pl-5" >Contact</Link>
               </li> */}
@@ -56,9 +59,10 @@ export const Header = () => {
           </div>
 
           <div className="hidden lg:text-right md:block space-x-4">
-            <Link to="/creative-space" className="primary-button">Creative Space</Link>
-            <Link to="/handpan" className="primary-button">Handpan</Link>
-            <Link to="/events" className="primary-button">Events</Link>
+            <Link to="/creative-space" className="primary-button whitespace-nowrap">Creative Space</Link>
+            <Link to="/handpan" className="primary-button whitespace-nowrap">Handpan</Link>
+            <Link to="/events" className="primary-button whitespace-nowrap">Events</Link>
+            <Link to="/retreats" className="primary-button whitespace-nowrap">Retreats</Link>
           </div>
         </div>
       </div>

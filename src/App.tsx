@@ -10,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 import { CreativeSpacePage } from './pages/creative-space';
 import { HandpanPage } from './pages/handpan';
 import { EventsPage } from './pages/events';
+import { RetreatsPage } from './pages/retreats';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/handpan"  element={<HandpanPage />}/>
           <Route path="/creative-space"  element={<CreativeSpacePage />}/>
           <Route path="/events"  element={<EventsPage />}/>
+          <Route path="/retreats"  element={<RetreatsPage />}/>
 
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
