@@ -18,6 +18,7 @@ export const Footer = () => {
             <li><Link className="text-link hover:text-hlink" to="/creative-space">Creative Space</Link></li>
             <li><Link className="text-link hover:text-hlink" to="/handpan">Handpan</Link></li>
             <li><Link className="text-link hover:text-hlink" to="/events">Events</Link></li>
+            <li><Link className="text-link hover:text-hlink" to="/retreats">Retreats</Link></li>
           </ul>
         </div>
         <div className="text-center space-x-4">
