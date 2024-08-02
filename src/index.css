@@ -947,6 +947,10 @@ p{
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1761,12 +1765,61 @@ p{
   outline-color: #00DAB3;
 }
 
+.clear-start {
+  clear: inline-start;
+}
+
+.clear-end {
+  clear: inline-end;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clear-none {
+  clear: none;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .whitespace-normal {
   white-space: normal;
 }
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.m-container-compensation {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1805,6 +1858,11 @@ p{
 
   .md\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .md\:m-auto {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .md\:mt-16 {
