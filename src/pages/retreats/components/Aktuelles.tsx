@@ -16,10 +16,6 @@ export const Aktuelles = () => {
           „Nimm dir eine Auszeit, weil du es dir wert bist!“
         </p>
 
-        <div className="text-center mb-12 lg:w-1 lg:text-left pb-10 lg:pb-0">
-          <Reels />
-        </div>
-
         <h3 className="lg:pb-5 pb-2 text-black">
           <u>Worauf du dich freuen kannst:</u>
         </h3>
@@ -133,8 +129,11 @@ export const Aktuelles = () => {
           breatheandbe@gmail.com
         </a>
 
-        <div className='mb-12'/>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKAvO5b8AFDgwMhKD5rzuFSYvMRBbDQ2iDZftJ8RqTJ9ut6g/viewform?embedded=true" height="850" className='m-container-compensation md:m-auto' scrolling='no' style={{width: '100%'}}>Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKAvO5b8AFDgwMhKD5rzuFSYvMRBbDQ2iDZftJ8RqTJ9ut6g/viewform?embedded=true" height="750" className='m-container-compensation md:m-auto' scrolling='no' style={{width: '100%'}}>Loading…</iframe>
+
+        <div className="text-center mb-12 lg:w-1 lg:text-left pb-10 lg:pb-0">
+          <Reels />
+        </div>
       </div>
     </section>
   );
