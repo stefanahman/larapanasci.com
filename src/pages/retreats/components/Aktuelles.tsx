@@ -1,6 +1,8 @@
 import React from 'react';
 
 import round from '@/assets/round-2.png'
+import retreat1 from '@/assets/retreat-1.jpeg'
+import retreat2 from '@/assets/retreat-2.jpeg'
 
 import { Reels } from './Reels';
 
@@ -9,6 +11,10 @@ export const Aktuelles = () => {
     <section style={{ backgroundImage: `url(${round})` }} className="bg-cream lg:py-20 md:py-16 px-4 py-14 bg-no-repeat bg-[90%_100%] bg-6">
       <div className="container justify-center">
         <h2 className="text-center lg:pb-12 pb-12">One-Day Retreat</h2>
+        <div className='flex flex-row' style={{gap: 8, overflowX: 'auto'}}>
+          <img className="" style={{width: '18rem'}} src={retreat1} alt="event" />
+          <img className="" style={{width: '18rem'}} src={retreat2} alt="event" />
+        </div>
         <p className="text-center lg:pb-5 pb-2 text-p-2">
           Samstag 14. September 2024
         </p>
